@@ -15,7 +15,10 @@ class Swapi
 	get_people(people["next"])
     end
 
-
+    def find_person(person)
+	@people.find {|p| p["name"].include?(person)}
+	
+    end
 
     def people
 	@people
