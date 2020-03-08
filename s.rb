@@ -4,19 +4,21 @@ require 'json'
 
 class Swapi
     def initialize
-	@array = [] 
+	@people = [] 
     end
 
     def get_people(path)
 	print "."
 	people = JSON.parse(RestClient.get(path))
-	people["results"].each { |person| @array << person }
+	people["results"].each { |person| @people << person }
 	return "complete" if people["next"] == nil
 	get_people(people["next"])
     end
 
+
+
     def people
-	@array
+	@people
     end
 end
 
