@@ -8,6 +8,7 @@ class Swapi
     end
 
     def get_people(path)
+	print "."
 	people = JSON.parse(RestClient.get(path))
 	people["results"].each { |person| @array << person }
 	return "complete" if people["next"] == nil
