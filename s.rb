@@ -44,6 +44,9 @@ class Swapi
 	@people
     end
 
+    def planets
+	@planets
+    end
 end
 
 p = Swapi.new
