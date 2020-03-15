@@ -1,3 +1,14 @@
+
+# "people"=>"https://www.swapi.co/api/people/"
+# "planets"=>"https://www.swapi.co/api/planets/"
+# "films"=>"https://www.swapi.co/api/films/"
+# "species"=>"https://www.swapi.co/api/species/"
+# "vehicles"=>"https://www.swapi.co/api/vehicles/"
+# "starships"=>"https://www.swapi.co/api/starships/"
+
+
+
+
 require 'rest-client'
 require 'pry'
 require 'json'
