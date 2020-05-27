@@ -1,10 +1,10 @@
 
-# "people"=>"https://www.swapi.co/api/people/"
-# "planets"=>"https://www.swapi.co/api/planets/"
-# "films"=>"https://www.swapi.co/api/films/"
-# "species"=>"https://www.swapi.co/api/species/"
-# "vehicles"=>"https://www.swapi.co/api/vehicles/"
-# "starships"=>"https://www.swapi.co/api/starships/"
+# "people"=>"https://swapi.dev/api/people/"
+# "planets"=>"https://swapi.dev/api/planets/"
+# "films"=>"https://swapi.dev/api/films/"
+# "species"=>"https://swapi.dev/api/species/"
+# "vehicles"=>"https://swapi.dev/api/vehicles/"
+# "starships"=>"https://swapi.dev/api/starships/"
 
 
 
@@ -51,8 +51,8 @@ end
 
 p = Swapi.new
 print "Getting People"
-p.get_people("http://www.swapi.co/api/people/")
+p.get_people("http://swapi.dev/api/people/")
 print "\nGetting Planets"
-p.get_planets("http://www.swapi.co/api/planets")
+p.get_planets("http://swapi.dev/api/planets")
 binding.pry
 p
